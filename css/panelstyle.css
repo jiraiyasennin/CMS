@@ -1,0 +1,68 @@
+/*
+Estilos del panel de administración del sitio
+*/
+/* 
+    Created on : 19-Jun-2018, 12:26:14
+    Author     : Dostow
+*/
+.navbar-nav li{
+    
+    font-weight: bold;
+    font-family: Bitter, "Georgia", Times New Roman, Times, serif;
+    font-size: 1.4em;
+}
+
+.Line{
+    margin-top: -35px;
+}
+
+body{
+    background-color: #2f4050;
+        
+}
+
+.col-sm-10{
+    background-color: #ffffff;
+    
+}
+#menupanel{
+    
+    color: #9fb1c2;
+    
+}
+#menupanel .active a{
+    
+        color: #ffffff;
+        background-color:#b3b3b3;
+        font-weight: bold;
+ }
+
+#menupanel a:hover{
+    
+        color: #ffffff;
+        background-color:#b3b3b3;
+        font-weight: bold;
+        display: block;
+    
+}
+#footer{
+    
+    padding: 10px;
+    border-top: 1px solid black;
+    color:#eeeeee;
+    background-color: #211f22;
+    text-align: center;
+        
+}
+.FieldInfo{
+    color: rgb(251, 174, 44);
+    font-family: Bitter, Georgia, "Times New Roman", Times, serif;
+    font-size: 1.2em;
+}
+#menupanel span{
+    margin-right: 8px;
+}
+#finalspace{
+    height: 12px;
+    background-color: #fff;
+}
