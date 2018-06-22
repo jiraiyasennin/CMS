@@ -7,16 +7,16 @@ class conector {
 
     function __construct() {
         /**
-         * Extraer un array con los datos dela conexión con la función
+         * Extraer un array con los datos de la conexión con la función
          * parse_ini_file
          */
         $db = parse_ini_file("../config/config.ini");
 
         try {
             $this->conexion = new PDO("{$db['type']}:host={$db['host']};port={$db['port']}", $db['user'], $db['pass']);
-            echo "<li>Conexión con la BD: <span class='ok'>OK</span></li>";
+            $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
-            echo "<li>Conexión con la BD: <span class='error'>Error de conexión</span></li>";
+            echo $e->getMessage();
         }
     }
 

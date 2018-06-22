@@ -4,7 +4,7 @@
                         By Dostow Ugel
 -->
 <html>
-    <?php include 'include/header.php' ?>
+    <?php include '../include/header.php' ?>
     <body>
         <div class="container-fluid">
             <div class="row">
@@ -14,7 +14,7 @@
                     <ul id="menupanel" class="nav nav-pills nav-stacked">
                         <li class="active"><a href="panelcontrol.php"><span class="glyphicon glyphicon-th-large"></span>Panel de Control</a></li>
                         <li class=""><a href="#"><span class="glyphicon glyphicon-plus"></span>Nuevo Post</a></li>
-                        <li class=""><a href="pages/categorias.php"><span class="glyphicon glyphicon-tags"></span>Categorías</a></li>
+                        <li class=""><a href="categorias.php"><span class="glyphicon glyphicon-tags"></span>Categorías</a></li>
                         <li class=""><a href="#"><span class="glyphicon glyphicon-user"></span>Manage Admins</a></li>
                         <li class=""><a href="#"><span class="glyphicon glyphicon-comment"></span>Comentarios</a></li>
                         <li class=""><a href="#"><span class="glyphicon glyphicon-list-alt"></span>Blog</a></li>
@@ -62,6 +62,6 @@
             <!--==========Fin del Row==========-->
         </div>
         <!--==========Fin del contenedor==========-->
-        <?php include 'include/footer.php'; ?>
+        <?php include '../include/footer.php'; ?>
     </body>
 </html>
