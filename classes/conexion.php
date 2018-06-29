@@ -1,5 +1,7 @@
-<!--Clase de conexión a la base de datos-->
 <?php
+/**
+ * Clase de conexión a la base de datos
+ */
 
 class conector {
 
@@ -13,11 +15,12 @@ class conector {
         $db = parse_ini_file("../config/config.ini");
 
         try {
-            $this->conexion = new PDO("{$db['type']}:host={$db['host']};port={$db['port']}", $db['user'], $db['pass']);
+            $this->conexion = new PDO("{$db['type']}:host={$db['host']};dbname={$db['name']};port={$db['port']}", $db['user'], $db['pass']);
             $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
+        
     }
 
     public function GetConector() {
@@ -26,4 +29,5 @@ class conector {
     }
 
 }
+
 ?>

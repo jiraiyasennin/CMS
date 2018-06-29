@@ -1,6 +1,4 @@
-<!--
-This is the content of the header with all the styles
--->
+<!--Contenido del header-->
 <head>
     <title>Panel de Control</title>
     <meta charset="UTF-8">

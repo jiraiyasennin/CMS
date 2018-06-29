@@ -1,8 +1,8 @@
 <?php
+
 /**
  * Los métodos se explican ellos mismos por el nombre que tienen
  */
-
 include 'conexion.php';
 
 class CategoriasControl extends conector {
@@ -11,11 +11,22 @@ class CategoriasControl extends conector {
         parent::__construct();
     }
 
-    public function LIstaDeCategorias() {
+    public function ListaDeCategorias() {
         $datos = $this->GetConector();
-        $query = "select * from categorias";
+        $query = "SELECT * FROM categorias";
+        $resultadoQuery = $datos->prepare($query);
+        $resultadoQuery->execute();
+        $resultado = $resultadoQuery->fetchAll(PDO::FETCH_ASSOC);
+        return $resultado;
+    }
+
+    public function VerificaCategoria($categoria) {
+        $datos = $this->GetConector();
+        $query = "SELECT nombre FROM categorias WHERE nombre=:nombre";
         $statement = $datos->prepare($query);
-        $resultado = $statement->execute();
+        $statement->bindParam(':nombre', $categoria);
+        $statement->execute();
+        $resultado = $statement->fetch(PDO::FETCH_ASSOC);
         return $resultado;
     }
 
@@ -23,10 +34,8 @@ class CategoriasControl extends conector {
         $datos = $this->GetConector();
         $query = "INSERT INTO categorias(nombre, creador) VALUES (:nombre, :creador)";
         $statement = $datos->prepare($query);
-        $nombre = "%{$nombreCat}%";
-        $creador = "%{$creadorCat}%";
-        $statement->bindParam(':nombre', $nombre);
-        $statement->bindParam(':creador', $creador);
+        $statement->bindParam(':nombre', $nombreCat);
+        $statement->bindParam(':creador', $creadorCat);
         $resultado = $statement->execute();
         return $resultado;
     }
