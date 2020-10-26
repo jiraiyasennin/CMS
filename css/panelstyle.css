@@ -1,0 +1,112 @@
+/*
+Estilos del panel de administración del sitio
+*/
+/* 
+    Created on : 19-Jun-2018, 12:26:14
+    Author     : Dostow
+*/
+body{
+    font-size: 16px;
+
+}
+.navbar-nav li{
+
+    font-weight: bold;
+    font-family: Bitter, "Georgia", Times New Roman, Times, serif;
+    font-size: 1.4em;
+}
+body{
+    background-color: #2f4050;
+}
+
+.col-sm-10{
+    background-color: #ffffff;
+
+}
+#menupanel{
+
+    color: #9fb1c2;
+}
+#menupanel .active a{
+
+    color: #ffffff;
+    background-color:#b3b3b3;
+    font-weight: bold;
+}
+#menupanel a:hover{
+
+    color: #ffffff;
+    background-color:#b3b3b3;
+    font-weight: bold;
+    display: block;
+}
+#footer{
+
+    padding: 10px;
+    border-top: 1px solid black;
+    color:#eeeeee;
+    background-color: #211f22;
+    text-align: center;
+}
+#tablaPanel td, th{
+    padding: 8px;
+
+}
+#tablaPanel img{
+    width: 100px;
+    height: 60px;
+}
+#menupanel span{
+    margin-right: 8px;
+}
+#finalspace{
+    height: 12px;
+    background-color: #fff;
+}
+#ok{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+#h1Articulos{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.topline{
+    height: 40px;
+    margin-left: -15px;
+    margin-right: -15px;
+    align-content: center;
+    color: white;
+    background-color: #2f4050;
+    border-bottom: solid grey 1px;
+}
+.topline h4{
+    margin-left: 20px;
+}
+.titulopanel{
+    text-align: center;
+    border-bottom: solid #d9d9d9 1px;
+}
+#formActualiza img{
+    height: 80px;
+    width: 100px;
+}
+#ok{
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 6px 4px 5px #b3b3b3; 
+    padding: 15px;
+    overflow: hidden;
+    margin:20px;
+}
+#error{
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 6px 4px 5px #b3b3b3; 
+    padding: 15px;
+    overflow: hidden;
+    margin:20px;
+
+}

@@ -1,0 +1,122 @@
+/* 
+    Created on : 06-Aug-2018, 12:49:55
+    Author     : Dostow
+*/
+#logoblog{
+    height: 50px;
+    width: 75px;
+    margin-right: 10px;
+
+}
+#navegacionblog li{
+    font-weight: normal;
+    font-family: fantasy;
+    font-size: 20px;
+}
+#paginacion{
+    float:none;
+    display:inline-block;
+}
+#navPaginacion{
+    text-align:center;
+}
+#indexArticles img{
+    height: 50%;
+    width: 50%;
+    max-width: 250;
+    max-height: 250px;
+}
+#indexArticles{
+    padding: 17px;
+    overflow: hidden;
+    margin:12px;
+}
+#indexArticles #creador{
+    font-style: italic;
+    font-size: 16px;
+}
+#footer{
+    padding: 2px;
+    border-top: 1px solid silver;
+    text-align: center;
+
+}
+#link{
+    text-align: center;
+}
+.btn-info{
+    font-size: 17px;
+}
+#badge-warning {
+    background-color: #f89406;
+}
+article{
+    font-size: 16px;
+    text-align: justify;
+    box-shadow: 6px 4px 5px #b3b3b3; 
+}
+#comentarios img{
+    height: 50px;
+    width: 50px;
+}
+#comentarios{
+    padding: 15px;
+    overflow: auto;
+    margin:20px;
+    word-wrap: break-word;
+}
+#comentarios #nombre{
+    font-style: italic;
+    font-size: 16px;
+}
+#usericon{
+    box-shadow: 3px 2px 2px #b3b3b3;
+}
+#formComentario{
+    font-size: 16px;
+    text-align: justify;
+    box-shadow: 6px 4px 5px #b3b3b3; 
+}
+#formComentario{
+    padding: 15px;
+    overflow: hidden;
+    margin:20px;
+}
+#ok{
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 6px 4px 5px #b3b3b3; 
+    padding: 15px;
+    overflow: hidden;
+    margin:20px;
+}
+#error{
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 6px 4px 5px #b3b3b3; 
+    padding: 15px;
+    overflow: hidden;
+    margin:20px;
+}
+#textComentario{
+    margin: 10px;
+    text-align: justify;
+}
+#menuSide{
+    padding: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    font-size: 15px;
+    text-align: justify;
+    box-shadow: 6px 4px 5px #b3b3b3;
+    font-family: Bitter,Georgia,Times,"Times New Roman",serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #666666;
+}
+.panel-title{
+    font-family: Bitter,"Georgia",Times,Times New Roman,serif;
+    font-weight: bold;
+    font-size: 17px;
+    color:#666666;
+}
